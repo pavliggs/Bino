@@ -1,0 +1,46 @@
+.section-wrap {
+    position: relative;
+
+    .section-wrap__icon {
+        background-color: rgba(255, 255, 255, 0.25);
+        border-radius: 50%;
+        bottom: 4%;
+        height: 74px;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 74px;
+        z-index: 2;
+
+        a {
+            background-color: $white-gray;
+            border-radius: 50%;
+            top: 50%;
+            height: 64px;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            width: 64px;
+            z-index: 2;
+
+            &:hover {
+
+                .section-wrap__img {
+                    animation-name: rotate;
+                    animation-duration: 2s;
+                    animation-iteration-count: infinite;
+                }
+            }
+
+            .section-wrap__img {
+                fill: $red;
+                height: 30px;
+                left: 50%;
+                position: absolute;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 30px;
+            }
+        }       
+    }
+}

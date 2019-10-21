@@ -1,0 +1,22 @@
+.buttons {
+    margin-top: 65px;
+
+    a {
+        @include btn($bg: $red, $two-button: true);
+    }
+}
+
+@media (max-width: 560px) {
+
+    .buttons {
+
+        a {
+            display: block;
+            margin: 15px auto;
+
+            &:first-child {
+                margin: 15px auto;
+            }
+        }
+    }
+}

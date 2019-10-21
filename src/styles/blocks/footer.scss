@@ -1,0 +1,42 @@
+.footer {
+    background-color: $services-bg-color;
+    padding: 25px 0;
+
+    .footer__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer__right {
+
+        p {
+            color: $advantages-desc-color;
+            font-size: 14px;
+            font-weight: 600px;
+            line-height: 24px;
+        }
+    }
+
+    .footer__left {
+        flex-basis: 27.3%;
+    }
+}
+
+@media (max-width: 580px) {
+    .footer {
+
+        .footer__wrap {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .footer__socials {
+            justify-content: center;
+        }
+
+        .footer__right {
+            margin-top: 10px;
+        }
+    }
+}

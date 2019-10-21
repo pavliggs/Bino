@@ -1,0 +1,123 @@
+.counts {
+    background: url('../img/counts-bg.jpg') center no-repeat;
+    background-size: cover;
+    padding: 130px 0 100px;
+    position: relative;
+
+    &::before {
+        background-color: rgba(0, 0, 0, 0.5);
+        content: "";
+        display: block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .counts__block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: relative;
+        z-index: 2;
+    }
+
+    .counts__element {
+        flex-basis: 20%;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .counts__icon {
+        border: 1px solid $white;
+        border-radius: 50%;
+        height: 109px;
+        margin: 0 auto 40px;
+        position: relative;
+        width: 109px;
+    }
+
+    .counts__img {
+        fill: $white;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .counts__img_size_1 {
+        height: 32px;
+        width: 37px;
+    }
+
+    .counts__img_size_2 {
+        height: 40px;
+        width: 40px;
+    }
+
+    .counts__img_size_3 {
+        height: 40px;
+        width: 35px;
+    }
+
+    .counts__img_size_4 {
+        height: 35px;
+        width: 35px;
+    }
+
+    .counts__img_size_5 {
+        height: 35px;
+        width: 35px;
+    }
+
+    .counts__text {
+        color: $white-gray;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        line-height: 30px;
+        margin: 20px 0;
+
+        span {
+            display: block;
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: 0.9px;
+            margin-top: 5px;
+        }
+    }
+}
+
+@media (max-width: 980px) {
+
+    .counts {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .counts {
+
+        .counts__block {
+            justify-content: center;
+        }
+
+        .counts__element {
+            flex-basis: 45%;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+
+    .counts {
+
+        .counts__element {
+            flex-basis: 100%;
+        }
+    }
+}

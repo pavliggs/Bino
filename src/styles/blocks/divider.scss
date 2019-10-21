@@ -1,0 +1,3 @@
+.divider {
+    @include divider($color-line: $light-line-color);
+}

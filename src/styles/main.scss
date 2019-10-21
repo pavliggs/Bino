@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+@import "helpers/reset";
+@import "helpers/variables";
+@import "helpers/fonts";
+@import "helpers/mixins";
+@import "helpers/core";
+
+@import "import/animations";
+@import "import/slick";
+
+@import "blocks/section-top";
+@import "blocks/menu";
+@import "blocks/buttons";
+@import "blocks/divider";
+@import "blocks/section-wrap";
+@import "blocks/advantages";
+@import "blocks/history";
+@import "blocks/services";
+@import "blocks/recent";
+@import "blocks/case-study";
+@import "blocks/ideas";
+@import "blocks/counts";
+@import "blocks/prices";
+@import "blocks/team";
+@import "blocks/integrations";
+@import "blocks/blog";
+@import "blocks/keep";
+@import "blocks/free";
+@import "blocks/footer";
+@import "blocks/socials";
+@import "blocks/arrow-up";
